@@ -1,0 +1,105 @@
+:root{
+    --mainColor :#ff206e;
+}
+
+.header{
+    background-image: url('../images/bg_osaka.jpg');
+    background-size: cover;
+    background-position: 0px -50px;
+}
+
+.header .header-content a {
+    color: var(--mainColor);
+}
+
+.icon{
+    width: 3rem;
+    height: 3rem;
+    background-color: black;
+    color: white;
+}
+.header .icon:hover{
+    background-color:var(--mainColor)  ;
+  transition:background-color 1s ;
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: var(--mainColor);
+}
+.nav-link:focus, .nav-link:hover {
+    color: var(--mainColor);
+}
+.about{
+    background-image: url('../images/light_dot.jpg');
+}
+.title h2{
+    font-size: 4rem;
+    letter-spacing: 10px;
+    color: #cacaca;
+    font-weight: 900;
+}
+.title h3{
+    font-size: 2rem;
+
+    font-weight: 900;
+}
+
+.about .about-conten p:first-of-type{
+    color: var(--mainColor);
+
+}
+img, svg {
+    vertical-align: middle;
+}
+.services {
+    background-image: url('../images/dark_dot.jpg');
+}
+.services .title h2{
+    color: rgb(34, 34, 34);
+
+}
+.services .title h3{
+    color: white;
+    position: relative;
+
+}
+
+ .services .services-item h3:after{
+    content: '';
+    position:absolute;
+    top:90px;
+    left: 50%;
+    width: 10%;
+    height:3px;
+    background-color:var(--mainColor);
+    transform:translateX(-50%);
+    transition : width 1s ;
+ }
+ .services .services-item:hover h3:after{
+
+    width: 30%;
+}
+.services-item:hover .icon{
+    background-color:var(--mainColor)  ;
+    transition:background-color 1s  ;
+}
+.clients img{
+    width: 120px;
+    height:120px ;
+}
+.carousel-indicators [data-bs-target] img{
+    width: 30px;
+    height:30px ;
+}
+.carousel-indicators [data-bs-target] {
+    text-indent: 0;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link{
+    color: black;
+    border: none;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+
+  color:var(--mainColor);
+}
+
+  
